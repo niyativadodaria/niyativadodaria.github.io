@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rick Fare - Amdavadi app for calculating auto fare</title>
+  <meta name="author" content="Niyati Vadodaria">
+  <meta name="description" content="Rick Fare Amdavad - Amdavadi app for calculating auto fare">
+  <meta name="keywords" content="Niyati vadodaria, RickFare, Rick, Fare, Amdavad, Google play, Neel kadia, The Two N, Rickshaw">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="rickfarestyles.css" />
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:400,400italic,600" rel="stylesheet">
+  <link rel="icon" href="favicon.png" />  
+</head>
+<body>
+
+  <header class="relative reverse min-y100 table center">
+    <div class="table-cell px1 py4 center object-scale transition-all">
+      <div class="inline-block mb1 dark bg-transparent rounded pulsate">
+        <div class="h0 bold square" >
+          <img src="rick.png" alt="RickFare_Icon_220x200" width="220" height="220">
+        </div>
+      </div>
+      <!-- <h1 class="h1 caps mb0">RickFare</h1> -->
+      <h3 class="h3 bold mb2">Amdavadi app for calculating auto fare</h3>
+      <!-- <p class="p caps mb2">CSS Toolkit</p> -->
+      <div>
+        <span class="mr1 mobile-hide">
+          <a class="p button button-box-blue" href="https://play.google.com/store/apps/details?id=neel.screen.split">Get the App</a>
+        </span>
+        <a class="p button button-box-blue" href="" target="">
+          <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+          </svg> -->
+          Contact
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <footer class="measure wrap px-responsive py1 mb0 clearfix">
+  <div class="left mobile-block mobile-center">
+    <a class="button button-small button-box-blue" href="" target="">
+      <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"/>
+      </svg> -->
+      Subscribe
+    </a>
+    <span class="mr1 mobile-hide"></span>
+    <br class="mobile-show">
+    <a href=".." class="leading-3 inline-block ml1">
+  Home
+</a>
+<a href="guide"
+  class="leading-3 inline-block ml1 ">
+  
+</a>
+<a href="//github.com/jxnblk/basscss" class="leading-3 inline-block ml1"></a>
+
+  </div>
+  <div class="right right-align mobile-block mobile-center">
+    <p class="f5 leading-3 mb0 mid-gray">
+      <svg class="icon icon-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
+      </svg>
+      Made with love by
+      <a href="http://thetwon.github.io">The Two N</a>
+    </p>
+  </div>
+</footer>
+
+
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var isBaselined = false,
+          $baselineButton = $('.js-toggle-baseline');
+      $baselineButton.click(function(){
+        if(isBaselined){
+          $baselineButton.removeClass('button-blue').addClass('button-gray').html('Show Baseline');
+          $('.js-baseline').removeClass('show-baseline');
+          $('.js-outline').removeClass('show-outline');
+        } else {
+          $baselineButton.removeClass('button-gray').addClass('button-blue').html('Hide Baseline');
+          $('.js-baseline').addClass('show-baseline');
+          $('.js-outline').addClass('show-outline');
+        }
+        isBaselined = !isBaselined;
+      });
+    });
+  </script>
+
+</body>
+</html>
